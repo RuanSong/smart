@@ -12,6 +12,12 @@
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
             <groupId>org.framework</groupId>
             <artifactId>smart_client</artifactId>
             <version>1.0-SNAPSHOT</version>

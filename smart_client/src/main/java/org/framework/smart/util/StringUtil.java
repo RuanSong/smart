@@ -32,4 +32,19 @@ public class StringUtil {
     public static boolean isNotEmply(String str) {
         return !isEmpty(str);
     }
+
+    /**
+     * 根据特定分隔符拆分字符串
+     *
+     * @param source
+     * @param split
+     * @return
+     */
+    public static String[] splitString(String source, String split) {
+        String[] splitArray = new String[]{};
+        if (source != null && split != null) {
+            splitArray = source.split(split);
+        }
+        return splitArray;
+    }
 }
