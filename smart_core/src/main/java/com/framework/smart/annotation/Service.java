@@ -1,4 +1,4 @@
-package org.framework.smart.annotation;
+package com.framework.smart.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

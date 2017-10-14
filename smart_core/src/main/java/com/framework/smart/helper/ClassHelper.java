@@ -1,7 +1,7 @@
-package org.framework.smart.helper;
+package com.framework.smart.helper;
 
-import org.framework.smart.annotation.Controller;
-import org.framework.smart.annotation.Service;
+import com.framework.smart.annotation.Controller;
+import com.framework.smart.annotation.Service;
 import org.framework.smart.util.ClassUtil;
 
 import java.util.HashSet;

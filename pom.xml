@@ -12,5 +12,6 @@
         <module>smart_client</module>
         <module>smart_web</module>
         <module>smart_entity</module>
+        <module>smart_core</module>
     </modules>
 </project>

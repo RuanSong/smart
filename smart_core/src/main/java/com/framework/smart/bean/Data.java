@@ -1,4 +1,4 @@
-package org.framework.smart.bean;
+package com.framework.smart.bean;
 
 /**
  * 返回数据对象

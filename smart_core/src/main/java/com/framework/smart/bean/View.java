@@ -1,4 +1,4 @@
-package org.framework.smart.bean;
+package com.framework.smart.bean;
 
 import java.util.HashMap;
 import java.util.Map;

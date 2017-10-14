@@ -1,6 +1,6 @@
-package org.framework.smart.helper;
+package com.framework.smart.helper;
 
-import org.framework.smart.ConfigConstant;
+import com.framework.smart.ConfigConstant;
 import org.framework.smart.util.PropsUtil;
 
 import java.util.Properties;

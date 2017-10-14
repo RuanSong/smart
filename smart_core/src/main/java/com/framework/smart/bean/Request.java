@@ -1,4 +1,4 @@
-package org.framework.smart.bean;
+package com.framework.smart.bean;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;

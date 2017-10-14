@@ -1,8 +1,8 @@
-package org.framework.smart.helper;
+package com.framework.smart.helper;
 
-import org.framework.smart.annotation.Action;
-import org.framework.smart.bean.Handler;
-import org.framework.smart.bean.Request;
+import com.framework.smart.annotation.Action;
+import com.framework.smart.bean.Handler;
+import com.framework.smart.bean.Request;
 import org.framework.smart.util.ArrayUtil;
 import org.framework.smart.util.CollectionUtil;
 

@@ -1,4 +1,4 @@
-package org.framework.smart.bean;
+package com.framework.smart.bean;
 
 import org.framework.smart.util.CastUtil;
 
