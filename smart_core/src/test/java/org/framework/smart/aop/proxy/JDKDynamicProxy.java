@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
- * JDk 动态代理实现,代理的类必须有接口，没有接口无法调用
+ * JDk 动态代理实现,代理的类必须有接口，代理的类若没有接口实现则无法被代理
  *
  * @author rosan
  * @date: 2017/10/15 下午9:36

@@ -5,9 +5,9 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
 /**
+ * CgLib动态代理实现，代理的类不需要实现接口
  * @author rosan
  * @date: 2017/10/15 下午9:42
  * @version:1.0
@@ -15,7 +15,7 @@ import java.lang.reflect.Proxy;
 public class CGLibDynamicProxy implements MethodInterceptor {
     private static CGLibDynamicProxy instance = new CGLibDynamicProxy();
 
-    public CGLibDynamicProxy() {
+    private CGLibDynamicProxy() {
     }
 
     public static CGLibDynamicProxy getInstance() {
