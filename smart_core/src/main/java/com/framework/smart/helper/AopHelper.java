@@ -36,7 +36,7 @@ public final class AopHelper {
     }
 
     /**
-     * 获取所有配置类切面的目标类
+     * 获取配置了@Aspect注解类的Set集合
      *
      * @param aspect
      * @return
@@ -51,7 +51,7 @@ public final class AopHelper {
     }
 
     /**
-     * 获取所有切面代理类的实现子类与代理类之间的集合
+     * 获取所有代理类与代理子类之间的关系Map集合
      *
      * @return
      */
@@ -69,7 +69,7 @@ public final class AopHelper {
     }
 
     /**
-     * 获取代理类与目标对象之间的关系Map
+     * 获取代理类与代理之类之间的代理Chain关系Map集合
      *
      * @param proxyMap
      * @return
