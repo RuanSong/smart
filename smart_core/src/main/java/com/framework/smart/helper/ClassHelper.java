@@ -4,6 +4,7 @@ import com.framework.smart.annotation.Controller;
 import com.framework.smart.annotation.Service;
 import org.framework.smart.util.ClassUtil;
 
+import java.lang.annotation.Annotation;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -73,6 +74,38 @@ public final class ClassHelper {
         Set<Class<?>> classSet = new HashSet<Class<?>>();
         classSet.addAll(getControllerClassSet());
         classSet.addAll(getServiceClassSet());
+        return classSet;
+    }
+
+    /**
+     * 获取应用包名下某父类(或接口)的所有子类(或实现类)
+     *
+     * @param superClass
+     * @return
+     */
+    public static Set<Class<?>> getClassSetBySuper(Class<?> superClass) {
+        Set<Class<?>> classSet = new HashSet<Class<?>>();
+        for (Class<?> cls : CLASS_SET) {
+            if (superClass.isAssignableFrom(cls) && !superClass.equals(cls)) {
+                classSet.add(cls);
+            }
+        }
+        return classSet;
+    }
+
+    /**
+     * 获取应用包名下所有带某注解的类
+     *
+     * @param annotataionClass
+     * @return
+     */
+    public static Set<Class<?>> getClassSetByAnnotation(Class<? extends Annotation> annotataionClass) {
+        Set<Class<?>> classSet = new HashSet<Class<?>>();
+        for (Class<?> cls : CLASS_SET) {
+            if (cls.isAnnotationPresent(annotataionClass)) {
+                classSet.add(cls);
+            }
+        }
         return classSet;
     }
 }
